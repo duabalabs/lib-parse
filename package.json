@@ -1,0 +1,35 @@
+{
+  "name": "@duabalabs/lib-parse",
+  "version": "1.0.0",
+  "description": "Parse Server Library",
+  "author": "manny <bobokeke0@gmail.com>",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "npm run build",
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/parse": "^2.18.14",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "parse": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duabalabs/lib-parse"
+  }
+}

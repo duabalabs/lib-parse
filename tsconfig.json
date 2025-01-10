@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "declaration": true,
+    "lib": [
+      "es6"
+    ] /* Specify library files to be included in the compilation. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+    "outDir": "dist" /* Redirect output structure to the directory. */,
+    "rootDir": "./" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+    "noEmit": false /* Do not emit outputs. */,
+    "sourceMap": true /* Generates corresponding '.map' file. */,
+    "target": "es6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. esnext targets the highest version your version of TypeScript supports*/,
+
+    "noLib": false,
+    "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
+ 
+    "types": [
+      "node"
+    ],
+    "esModuleInterop": true,
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+     "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
+    "baseUrl": "./",
+  },
+  "exclude": ["node_modules", "jest.config.js", "**/*.spec.ts", "./dist/**/*", "**/dist/**/*"],
+  "include": ["src/**/*", "index.ts"]
+}
