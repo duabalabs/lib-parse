@@ -5,6 +5,9 @@
   "author": "manny <bobokeke0@gmail.com>",
   "main": "src/index.ts",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "prepare": "npm run build",
     "start": "ts-node src/index.ts",

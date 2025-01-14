@@ -1,0 +1,45 @@
+name: Publish Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to GitHub Package Registry
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      # Step 1: Checkout the Code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set Up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: npm
+
+      # Step 3: Configure GitHub Registry Authentication
+      - name: Configure npm Authentication
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          npm config set @duabalabs:registry https://npm.pkg.github.com
+
+      # Step 4: Install Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 5: Publish the Package
+      - name: Publish Package to GitHub Registry
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm version patch --no-git-tag-version
+          npm publish

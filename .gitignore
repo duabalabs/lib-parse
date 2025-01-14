@@ -154,3 +154,8 @@ yarn-debug.log*
 yarn-error.log*
 .vscode/launch.json
 build
+
+# Ignore all files in the folder
+.github/workflows/cred/*
+# Exclude a README.md from being ignored
+!.github/workflows/cred/README.md
