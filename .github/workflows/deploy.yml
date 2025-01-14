@@ -26,6 +26,9 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Bump Version
+        run: npm version patch --no-git-tag-version
+
       # Step 3: Configure GitHub Registry Authentication
       - name: Configure npm Authentication
         run: |
@@ -36,7 +39,7 @@ jobs:
       - name: Install Dependencies
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn install
+        run: npm install
 
       # Step 5: Publish the Package
       - name: Publish Package to GitHub Registry
