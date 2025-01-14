@@ -26,10 +26,10 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Step 3: Configure GitHub Registry Authentication
-      - name: Configure npm Authentication
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ./.npmrc
+      # # Step 3: Configure GitHub Registry Authentication
+      # - name: Configure npm Authentication
+      #   run: |
+      #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ./.npmrc
 
       # Step 4: Install Dependencies
       - name: Install Dependencies
