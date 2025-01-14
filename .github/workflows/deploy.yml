@@ -30,7 +30,7 @@ jobs:
       - name: Install Dependencies
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm install
+        run: yarn install
 
       # Step 5: Publish the Package
       - name: Publish Package to GitHub Registry
