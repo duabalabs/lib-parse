@@ -33,6 +33,8 @@ jobs:
 
       # Step 4: Install Dependencies
       - name: Install Dependencies
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm install
 
       # Step 5: Publish the Package
