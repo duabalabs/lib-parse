@@ -26,9 +26,6 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Bump Version
-        run: npm version patch --no-git-tag-version
-
       # Step 3: Configure GitHub Registry Authentication
       - name: Configure npm Authentication
         run: |
