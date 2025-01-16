@@ -1,4 +1,4 @@
-import Parse from "parse";
+import Parse from "../../../parse.js";
 
 export interface IUser extends Parse.User {
   username: string;

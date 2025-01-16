@@ -1,4 +1,4 @@
-import Parse from "parse";
+import Parse from "../../../parse.ts";
 
 /**
  * Interface representing a assets.

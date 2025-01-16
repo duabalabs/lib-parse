@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Parse from "parse/node";
+import Parse from "../parse.js";
 import { IParseServerAPICred, ParseInitialize, SubClasses } from "../client";
 
 export const useParseConnect = (parseConfig: IParseServerAPICred) => {

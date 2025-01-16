@@ -1,6 +1,5 @@
 import { BaseClass } from "../class/baseClasses";
-import { ParseFunctions } from "../class/parseFunctions";
-import Parse from "parse";
+import Parse from "../../parse";
 
 export * from "./useParseQuery";
 export type KeysEnum<T> = { [P in keyof Required<T>]: true };
@@ -11,7 +10,7 @@ export class CloudConfig extends BaseClass {
   }
   async initialize(configKeys: KeysEnum<any>) {
     const cloudConfig = {} as any;
-    const config = await ParseFunctions.performAction(Parse.Config.get(), true);
+    const config = await Parse.Config.get();
     if (!config) {
       return;
     }

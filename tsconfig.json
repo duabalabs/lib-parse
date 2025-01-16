@@ -15,16 +15,20 @@
 
     "noLib": false,
     "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
- 
-    "types": [
-      "node"
-    ],
+
+    "types": ["node"],
     "esModuleInterop": true,
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
-     "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
     "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
-    "baseUrl": "./",
+    "baseUrl": "./"
   },
-  "exclude": ["node_modules", "jest.config.js", "**/*.spec.ts", "./dist/**/*", "**/dist/**/*"],
+  "exclude": [
+    "node_modules",
+    "jest.config.js",
+    "**/*.spec.ts",
+    "./dist/**/*",
+    "**/dist/**/*"
+  ],
   "include": ["src/**/*", "index.ts"]
 }

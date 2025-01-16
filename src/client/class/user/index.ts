@@ -1,6 +1,6 @@
 "use client";
 
-import Parse from "parse";
+import Parse from "../../../parse.js";
 
 import { ParseUserBaseClass } from "../baseClasses";
 import { IUser } from "./types";

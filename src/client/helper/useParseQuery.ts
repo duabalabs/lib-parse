@@ -1,4 +1,4 @@
-import Parse from "parse";
+import Parse from "../../parse.js";
 
 import { useRef, useReducer, useMemo, useCallback, useEffect } from "react";
 
