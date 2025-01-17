@@ -1,6 +1,6 @@
 {
   "name": "@duabalabs/lib-parse",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Parse Server Library",
   "main": "src/index.ts",
   "publishConfig": {
@@ -31,7 +31,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@duabalabs/lib-tradingbot": "^1.0.14",
     "parse": "^5.3.0",
     "react": "^18.0.0"
   }
