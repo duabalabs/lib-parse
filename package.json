@@ -1,11 +1,8 @@
 {
   "name": "@duabalabs/lib-parse",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Parse Server Library",
   "main": "src/index.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": "https://github.com/duabalabs/lib-parse",
   "author": "manny <bobokeke0@gmail.com>",
   "license": "MIT",
